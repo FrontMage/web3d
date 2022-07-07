@@ -1,0 +1,452 @@
+[
+  {
+    "type": "constructor",
+    "stateMutability": "nonpayable",
+    "inputs": []
+  },
+  {
+    "type": "event",
+    "name": "RaceTask",
+    "inputs": [
+      {
+        "type": "address",
+        "name": "node",
+        "internalType": "address",
+        "indexed": false
+      },
+      {
+        "type": "uint64",
+        "name": "taskId",
+        "internalType": "uint64",
+        "indexed": false
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "ResetRunners",
+    "inputs": [
+      {
+        "type": "address[]",
+        "name": "receivers",
+        "internalType": "address[]",
+        "indexed": false
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "StressTestTask",
+    "inputs": [],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "TaskPublished",
+    "inputs": [
+      {
+        "type": "uint64",
+        "name": "taskId",
+        "internalType": "uint64",
+        "indexed": false
+      },
+      {
+        "type": "string",
+        "name": "url",
+        "internalType": "string",
+        "indexed": false
+      },
+      {
+        "type": "string",
+        "name": "options",
+        "internalType": "string",
+        "indexed": false
+      },
+      {
+        "type": "uint64",
+        "name": "maxRunNum",
+        "internalType": "uint64",
+        "indexed": false
+      },
+      {
+        "type": "address[]",
+        "name": "receivers",
+        "internalType": "address[]",
+        "indexed": false
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "uint64",
+        "name": "",
+        "internalType": "uint64"
+      }
+    ],
+    "name": "calcEarnings",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "completeSubIndexForTask",
+    "inputs": [
+      {
+        "type": "uint64",
+        "name": "taskId",
+        "internalType": "uint64"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "uint64",
+        "name": "",
+        "internalType": "uint64"
+      }
+    ],
+    "name": "completeTimeout",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "pure",
+    "outputs": [
+      {
+        "type": "string",
+        "name": "",
+        "internalType": "string"
+      }
+    ],
+    "name": "implementationVersion",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "address",
+        "name": "",
+        "internalType": "address"
+      }
+    ],
+    "name": "owner",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "uint64",
+        "name": "",
+        "internalType": "uint64"
+      }
+    ],
+    "name": "price",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "payable",
+    "outputs": [],
+    "name": "publishTask",
+    "inputs": [
+      {
+        "type": "string",
+        "name": "url",
+        "internalType": "string"
+      },
+      {
+        "type": "string",
+        "name": "options",
+        "internalType": "string"
+      },
+      {
+        "type": "uint64",
+        "name": "maxRunNum",
+        "internalType": "uint64"
+      },
+      {
+        "type": "address[]",
+        "name": "receivers",
+        "internalType": "address[]"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "raceSubIndexForTask",
+    "inputs": [
+      {
+        "type": "uint64",
+        "name": "taskId",
+        "internalType": "uint64"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "uint64",
+        "name": "",
+        "internalType": "uint64"
+      }
+    ],
+    "name": "raceTimeout",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "bool",
+        "name": "",
+        "internalType": "bool"
+      }
+    ],
+    "name": "readSubIndexForTask",
+    "inputs": [
+      {
+        "type": "uint64",
+        "name": "taskId",
+        "internalType": "uint64"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "resetRunners",
+    "inputs": [
+      {
+        "type": "address[]",
+        "name": "receivers",
+        "internalType": "address[]"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "setCompleteTimeout",
+    "inputs": [
+      {
+        "type": "uint64",
+        "name": "_completeTimeout",
+        "internalType": "uint64"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "setPrice",
+    "inputs": [
+      {
+        "type": "uint64",
+        "name": "_price",
+        "internalType": "uint64"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "setRaceTimeout",
+    "inputs": [
+      {
+        "type": "uint64",
+        "name": "_raceTimeout",
+        "internalType": "uint64"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "uint64",
+        "name": "",
+        "internalType": "uint64"
+      }
+    ],
+    "name": "startDay",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "payable",
+    "outputs": [],
+    "name": "stressTest",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "uint64",
+        "name": "currentRunNum",
+        "internalType": "uint64"
+      },
+      {
+        "type": "uint64",
+        "name": "maxRunNum",
+        "internalType": "uint64"
+      },
+      {
+        "type": "uint64",
+        "name": "startTime",
+        "internalType": "uint64"
+      }
+    ],
+    "name": "taskInfo",
+    "inputs": [
+      {
+        "type": "uint64",
+        "name": "",
+        "internalType": "uint64"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "uint64",
+        "name": "",
+        "internalType": "uint64"
+      }
+    ],
+    "name": "taskSum",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "uint64",
+        "name": "",
+        "internalType": "uint64"
+      }
+    ],
+    "name": "userDayIncome",
+    "inputs": [
+      {
+        "type": "address",
+        "name": "",
+        "internalType": "address"
+      },
+      {
+        "type": "uint64",
+        "name": "",
+        "internalType": "uint64"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "uint64",
+        "name": "",
+        "internalType": "uint64"
+      }
+    ],
+    "name": "userSettledDay",
+    "inputs": [
+      {
+        "type": "address",
+        "name": "",
+        "internalType": "address"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "bool",
+        "name": "",
+        "internalType": "bool"
+      }
+    ],
+    "name": "userTask",
+    "inputs": [
+      {
+        "type": "address",
+        "name": "",
+        "internalType": "address"
+      },
+      {
+        "type": "uint64",
+        "name": "",
+        "internalType": "uint64"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "bool",
+        "name": "",
+        "internalType": "bool"
+      }
+    ],
+    "name": "userTaskCompleted",
+    "inputs": [
+      {
+        "type": "address",
+        "name": "",
+        "internalType": "address"
+      },
+      {
+        "type": "uint64",
+        "name": "",
+        "internalType": "uint64"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "withdrawEarnings",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "withdrawFund",
+    "inputs": []
+  }
+]
