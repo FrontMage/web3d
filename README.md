@@ -19,6 +19,10 @@ cargo build --release
 cargo run
 ```
 
+# Wallet balance issues
+
+Please make sure that the wallets in `./key` has some balance for gas fee.
+
 # Cross-platform build
 To build this project for other platform, make sure you have cross compiler tools installed on your development machine.
 
